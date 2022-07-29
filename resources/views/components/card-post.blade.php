@@ -1,7 +1,7 @@
 @props(['post'])
 
 <article class="my-8 bg-white shadow-lg rounded-lg overflow-hidden">
-    <img class="w-full h-72 object-cover object-center" src="http://localhost/BlogPrueba/public/{{Storage::url($post->image->url)}}" alt="">
+    <img class="w-full h-72 object-cover object-center" src="http://localhost/Blog-Laravel-Livewire/public{{Storage::url($post->image->url)}}" alt="">
     <img src="" alt="">
 
     <div class="px-6 py-4">
