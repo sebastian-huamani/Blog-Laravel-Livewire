@@ -10,11 +10,21 @@
 - composer install
 - cp .env.example .env
 - php artisan key:generate
-- php artisan migrate --seed
 ```
 
+Para generar la relacion entre la carpeta public/storage/ y la carpeta storage/app/public debes ejecutar el siguiente comando:
+```sh
+php artisan storage:link
+```
+y para finalizar actualizamos la base de datos:
 
-### Modificar añgunos archivos:
+```sh
+- php artisan migrate --seed
+```
+<br>
+
+
+### Modificar añgunos archivos en caso las imagenes no se descargan o se descargen y se eliminen:
 
 el archivo 'vendor\fakerphp\faker\src\Faker\Provider\Image.php modificar'
 
