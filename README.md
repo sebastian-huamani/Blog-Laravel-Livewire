@@ -16,6 +16,12 @@ Para generar la relacion entre la carpeta public/storage/ y la carpeta storage/a
 ```sh
 php artisan storage:link
 ```
+Este proyecto utiliza adminLTE, al clonar este u otro repositorio hay probabilidades que te salga un error ```No hint path defined for [adminlte]```, la solucion de momento es requerir el paquete de adminLTE. link [https://github.com/jeroennoten/Laravel-AdminLTE]
+
+```sh
+composer require jeroennoten/laravel-adminlte
+```
+
 y para finalizar actualizamos la base de datos:
 
 ```sh
