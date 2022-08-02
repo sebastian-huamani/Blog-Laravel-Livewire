@@ -12,7 +12,7 @@
             {{-- Contenido principal --}}
             <div class="lg:col-span-2">
                 <figure>
-                    <img class="w-full h-80 object-cover object-center" src="http://localhost/BlogPrueba/public/{{Storage::url($post->image->url)}}" alt="">
+                    <img class="w-full h-80 object-cover object-center" src="http://localhost/Blog-Laravel-Livewire/public/{{Storage::url($post->image->url)}}" alt="">
                 </figure>
                 <div class="text-base text-gray-500 mt-4">
                     {{$post->body}}
@@ -26,8 +26,8 @@
                 <ul>
                     @foreach ($similares as $similar)
                         <li class="mb-4">
-                            <a class=" flex columns-2 " href="{{route('posts.show', $similar)}}">
-                                <img class="w-36 h-20 object-cover object-center" src="http://localhost/BlogPrueba/public/{{Storage::url($similar->image->url)}}" alt="">
+                            <a class="grid grid-cols-sidebar " href="{{route('posts.show', $similar)}}">
+                                <img class="w-40 h-20 object-cover object-center" src="http://localhost/Blog-Laravel-Livewire/public/{{Storage::url($similar->image->url)}}" alt="">
                                 <span class="ml-2 text-gray-600">{{$similar->name}}</span>
                             </a>
                         </li>
