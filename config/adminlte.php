@@ -265,59 +265,16 @@ return [
             'icon' => 'far fa-fw fa-bookmark',
             'active' => ['admin/tags*']
         ],
+        ['header' => 'Opciones de blog'],
         [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
-        ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
+            'text'       => 'Lista de post',
             'icon_color' => 'red',
-            'url'        => '#',
+            'route'        => 'admin.posts.index',
         ],
         [
-            'text'       => 'warning',
+            'text'       => 'Crear Nuevo Post',
             'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
+            'route'        => 'admin.posts.create',
         ],
     ],
 
@@ -473,5 +430,5 @@ return [
     |
     */
 
-    'livewire' => false,
+    'livewire' => true,
 ];
