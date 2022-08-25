@@ -1,10 +1,6 @@
 <div class="card">
     <div class="card-body">
-        
-        {{$search}}
-        <div class="card-header">
-            <input wire:model="search" type="text" class="form-control" placeholder="Ingre el nombre un posts">
-        </div>
+
 
         <table class="table table-striped">
             <thead>
@@ -34,9 +30,6 @@
             </tbody>
         </table>
 
-        <div class="card-footer">
-            {{$posts->links()}}
-        </div>
 
     </div>
 </div>

@@ -11,7 +11,6 @@ class PostIndex extends Component
 
     use WithPagination;
     protected $paginationTheme = "bootstrap";
-    public $search = "texto de prueba";
 
     public function render()
     {
